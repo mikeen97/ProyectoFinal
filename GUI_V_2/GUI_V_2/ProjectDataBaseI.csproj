@@ -1,0 +1,280 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{F49E04CD-5889-490E-8C61-1BE3798F4650}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>GUI_V_2</RootNamespace>
+    <AssemblyName>GUI_V_2</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="conexion.cs" />
+    <Compile Include="ControladorAereoAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ControladorAereoAdd.Designer.cs">
+      <DependentUpon>ControladorAereoAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AvionDelete.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AvionDelete.Designer.cs">
+      <DependentUpon>AvionDelete.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AvionFind.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AvionFind.Designer.cs">
+      <DependentUpon>AvionFind.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ControladorAereoDelete.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ControladorAereoDelete.Designer.cs">
+      <DependentUpon>ControladorAereoDelete.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ControladorAereoFind.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ControladorAereoFind.Designer.cs">
+      <DependentUpon>ControladorAereoFind.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Master.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Master.Designer.cs">
+      <DependentUpon>Master.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MenuAvion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuAvion.Designer.cs">
+      <DependentUpon>MenuAvion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MenuControladorAereo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuControladorAereo.Designer.cs">
+      <DependentUpon>MenuControladorAereo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MenuModelos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuModelos.Designer.cs">
+      <DependentUpon>MenuModelos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MenuPruebas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuPruebas.Designer.cs">
+      <DependentUpon>MenuPruebas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MenuTecnico.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuTecnico.Designer.cs">
+      <DependentUpon>MenuTecnico.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modelo.cs" />
+    <Compile Include="ModeloDelete.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ModeloDelete.Designer.cs">
+      <DependentUpon>ModeloDelete.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ModeloFind.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ModeloFind.Designer.cs">
+      <DependentUpon>ModeloFind.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Principal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Principal.Designer.cs">
+      <DependentUpon>Principal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ModeloAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ModeloAdd.Designer.cs">
+      <DependentUpon>ModeloAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InicioResumen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InicioResumen.Designer.cs">
+      <DependentUpon>InicioResumen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AvionAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AvionAdd.Designer.cs">
+      <DependentUpon>AvionAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="PruebaDelete.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PruebaDelete.Designer.cs">
+      <DependentUpon>PruebaDelete.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PruebasAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PruebasAdd.Designer.cs">
+      <DependentUpon>PruebasAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PruebasFind.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PruebasFind.Designer.cs">
+      <DependentUpon>PruebasFind.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sqlconnection.cs" />
+    <Compile Include="TecnicoAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TecnicoAdd.Designer.cs">
+      <DependentUpon>TecnicoAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TecnicoDelete.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TecnicoDelete.Designer.cs">
+      <DependentUpon>TecnicoDelete.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="ControladorAereoAdd.resx">
+      <DependentUpon>ControladorAereoAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AvionDelete.resx">
+      <DependentUpon>AvionDelete.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AvionFind.resx">
+      <DependentUpon>AvionFind.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ControladorAereoDelete.resx">
+      <DependentUpon>ControladorAereoDelete.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ControladorAereoFind.resx">
+      <DependentUpon>ControladorAereoFind.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Master.resx">
+      <DependentUpon>Master.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuAvion.resx">
+      <DependentUpon>MenuAvion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuControladorAereo.resx">
+      <DependentUpon>MenuControladorAereo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuModelos.resx">
+      <DependentUpon>MenuModelos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuPruebas.resx">
+      <DependentUpon>MenuPruebas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuTecnico.resx">
+      <DependentUpon>MenuTecnico.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModeloDelete.resx">
+      <DependentUpon>ModeloDelete.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModeloFind.resx">
+      <DependentUpon>ModeloFind.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Principal.resx">
+      <DependentUpon>Principal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModeloAdd.resx">
+      <DependentUpon>ModeloAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InicioResumen.resx">
+      <DependentUpon>InicioResumen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AvionAdd.resx">
+      <DependentUpon>AvionAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="PruebaDelete.resx">
+      <DependentUpon>PruebaDelete.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PruebasAdd.resx">
+      <DependentUpon>PruebasAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PruebasFind.resx">
+      <DependentUpon>PruebasFind.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TecnicoAdd.resx">
+      <DependentUpon>TecnicoAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TecnicoDelete.resx">
+      <DependentUpon>TecnicoDelete.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
